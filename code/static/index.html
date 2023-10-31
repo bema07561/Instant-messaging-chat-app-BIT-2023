@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIGGLE</title>
+    <link rel="stylesheet" href="login-style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="main-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  </head>
+  <body onload="randomBackground();">
+    <ul class="pages">
+      <!-- CHAT PAGE -->
+      <li class="chat-page">
+        <div class="container">
+          <div class="row">
+            <nav class="menu">
+              <ul class="items">
+                <li class="profile-icon">
+            <img class="profile" src="https://placekitten.com/350/350?image=10" alt="profile-icon">
+                </li>
+                <li class="item">
+                  <i class="fa fa-home" aria-hidden="true"></i>
+                </li>
+                <li class="item">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </li>
+                <li class="item">
+                  <i class="fa fa-cog" aria-hidden="true"></i>
+                </li>
+              </ul>
+            </nav>
+                  <section class="discussions">
+              <div class="discussion search">
+                <div class="searchbar">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                  <input type="text" placeholder="Search..."></input>
+                </div>
+              </div>
+              <div id="online-users" class="online-users-list">
+        
+                <div class="discussion">
+                  <div class="photo">
+                    <div class="online"></div>
+                  </div>
+                  <div class="desc-contact">
+                    <p class="name"></p>
+                  </div>
+                  <div class="timer"></div>
+                </div>
+              </div>
+              
+            </section>
+            <section class="chat">
+              <div class="header-chat">
+                <i class="icon fa fa-user-o" aria-hidden="true"></i>
+                <p class="name">Megan Leib</p>
+                <i class="icon clickable fa fa-ellipsis-h right" aria-hidden="true"></i> 
+              </div>  
+              <div class="messages">       
+                <div class="message">
+                  <div class="photo" style="background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);">
+                    <div class="online"></div>
+                  </div>
+                  <p class="text"> Hi, how are you ? </p>
+                </div>
+                <div class="message text-only">
+                  <p class="text"> What are you doing tonight ? Want to go take a drink ?</p>
+                </div>
+                <p class="time"> 14h58</p>
+                <div class="message text-only">
+                  <div class="response">
+                    <p class="text"> Hey Megan ! It's been a while 😃</p>
+                  </div>
+                </div>
+                <div class="message text-only">
+                  <div class="response">
+                    <p class="text"> When can we meet ?</p>
+                  </div>
+                </div>
+                <p class="response-time time"> 15h04</p>
+              <div class="footer-chat">
+                <input type="text" class="input_message" placeholder="Type your message here"></input>
+                <i class="icon send fa fa-paper-plane-o clickable" aria-hidden="true"></i>
+              </div>
+            </section>
+          </div>
+        </div>
+      </li>
+      <!-- LOGIN PAGE -->
+      <li class="login page">
+        <div class="login-wrapper">
+          <div class="login-wrapper__left">
+            <p class="logo"><strong>GIGGLE CHAT APP</strong></p>
+            <div>
+              <h1>Welcome back</h1>
+              <p class="large">Start your chatting journey now!.</p>
+            </div>
+          </div>
+          <div class="login-wrapper__right">
+            <div class="form">
+              <h3 class="title">What's your nickname?</h3>
+              <input class="username_input" type="text" maxlength="14" />
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    
+    <script src="//code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/chat.js"></script>
+  </body>
+</html>
